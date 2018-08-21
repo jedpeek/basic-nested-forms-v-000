@@ -17,7 +17,7 @@ class PeopleController < ApplicationController
   private
 
   def person_params
-    params.require(:person).permit(
+    params.require(:recipe).permit(
     :name,
      addresses_attributes:[
       :street_address_1,
